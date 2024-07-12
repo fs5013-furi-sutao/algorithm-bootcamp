@@ -1,0 +1,171 @@
+---
+title: 02. 例題(応用)
+section: 04.分岐構造
+slug: /selection/02-selection-examples-advance
+order: 2
+---
+
+import { Question, Answer } from 'smooth-doc/components'
+
+# 02. 例題(応用)
+
+<p className="goal">分岐構造の使い方を知ろう</p>
+
+
+## 例題6
+
+    次のフローチャートでは分岐構造の中にもう一つの分岐構造が使われています。
+    このような構造のことを「入れ子構造」または「ネスト構造」と呼びます。
+
+    ![例題6](./selection-example-006.svg)
+
+    <Question question = "変数 number = 17 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-006_3.svg"
+            answer = "どちらも割り切れない"
+        />
+    </Question>
+
+    分岐構造のネストは組み合わせ方によって実行結果が大きく分かれます。
+    例えば、このフローチャートでは入力した値が「```2で割り切れる```」「```3で割り切れる```」または「```どちらでも割り切れない```」かを出力します。
+    しかし、2と3のどちらでも割り切れる場合は「```2で割り切れる```」と出力されることに注意しましょう。
+
+    <Question question = "変数 number = 6 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-006_1.svg"
+            answer = "2で割り切れる"
+        />
+    </Question>
+
+    <Question question = "変数 number = 27 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-006_2.svg"
+            answer = "3で割り切れる"
+        />
+    </Question>
+
+## 例題7
+
+    次のフローチャートは例題6と比較して内容が少し似ています。
+    入力した数値が2で割り切れるか、3で割り切れるかをチェックしているところは変わりません。
+    しかし、ネスト構造が変わったことで、2と3の両方で割り切れることがチェックできるようになりました。
+
+    ![例題7](./selection-example-007.svg)
+
+    <Question question = "変数 number = 10 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-007_2.svg"
+            answer = "2で割り切れる"
+        />
+    </Question>
+
+    <Question question = "変数 number = 12 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-007_1.svg"
+            answer = "2と3で割り切れる"
+        />
+    </Question>
+
+    <Question question = "変数 number = 9 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-007_3.svg"
+            answer = ""
+        />
+    </Question>
+
+## 例題8
+
+    ![例題8](./selection-example-008.svg)
+
+    <Question question = "変数 a = 20, b = 12 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-008_2.svg"
+            answer = "aはbより大きい"
+        />
+    </Question>
+
+    <Question question = "変数 a = 5, b = 5 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-008_1.svg"
+            answer = "aはbと等しい"
+        />
+    </Question>
+
+    <Question question = "変数 a = 27, b = 31 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-008_3.svg"
+            answer = "aはbより小さい"
+        />
+    </Question>
+
+## 例題9
+
+    ![例題9](./selection-example-009.svg)
+
+    <Question question = "変数 number = 0 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-009_2.svg"
+            answer = "0です"
+        />
+    </Question>
+
+    <Question question = "変数 number = -8 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-009_1.svg"
+            answer =
+                "負数
+                偶数"
+        />
+    </Question>
+
+    <Question question = "変数 number = 14 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-009_3.svg"
+            answer =
+                "正数
+                偶数"
+        />
+    </Question>
+
+    <Question question = "変数 number = 13 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-009_5.svg"
+            answer =
+                "正数
+                奇数"
+        />
+    </Question>
+
+    <Question question = "変数 number = -9 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-009_4.svg"
+            answer =
+                "負数
+                奇数"
+        />
+    </Question>
+
+## 例題10
+
+    ![例題10](./selection-example-010.svg)
+
+    <Question question = "変数 a = 17, b = 3 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-010_2.svg"
+            answer = "5"
+        />
+    </Question>
+
+    <Question question = "変数 a = 15, b = 0 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-010_1.svg"
+            answer = "0除算はできません"
+        />
+    </Question>
+
+    <Question question = "変数 a = 0, b = 4 の場合の実行結果" opened="true">
+        <Answer
+            imgSrc = "./selection-example-010_2.svg"
+            answer = "0"
+        />
+    </Question>
