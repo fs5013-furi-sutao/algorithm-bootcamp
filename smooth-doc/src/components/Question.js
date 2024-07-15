@@ -12,7 +12,7 @@ export const Answer = (props) => {
                         padding:'5px',
                         textAlign:'center',
                         borderRadius:'5px 5px 0 0'}}>
-                    Answer
+                    実行結果
                 </div>
 
                 <Code>{ props.answer }</Code>
