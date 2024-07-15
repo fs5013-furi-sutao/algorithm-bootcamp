@@ -11,7 +11,7 @@ module.exports = {
         description: 'アルゴリズムの基礎を身に付けるためのカリキュラム',
         baseDirectory: path.resolve(__dirname, '../'),
         author: 'Takada Riuji',
-        sections: ['アルゴリズム', '01.イントロ', '02.アルゴリズムの制御構造', '03.順次構造', '04.分岐構造', '05.反復構造', 'サイトについて'],
+        sections: ['アルゴリズム', '01.イントロ', '02.アルゴリズムの制御構造', '03.順次構造', '04.分岐構造', '05.反復構造', '06.制御構造の組み合わせ', 'サイトについて'],
         navItems: [{ title: 'ホーム', url: '/home/' }],
         githubRepositoryURL: 'https://github.com/fs5013-furi-sutao/algorithm-bootcamp',
         carbonAdsURL:
