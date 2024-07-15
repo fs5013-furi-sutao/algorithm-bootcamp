@@ -13,70 +13,74 @@ import { Question, Answer } from 'smooth-doc/components'
 
 ## 例題1
 
-    ![例題1](./iteration-example-001.svg)
+制御構造を組み合わせたフローチャートを確認していく前に配列について学習しましょう。
+配列は変数と同じようにデータを保持することができます。
+ただし、変数が値を一つ格納することができるのに対して、配列は複数の値を保持することができます。
 
-    <Question question = "実行結果" opened="true">
-        <Answer
-            answer =
-                "1
-                2
-                3"
-        />
-    </Question>
+変数が「箱」に例えられるのに対して、配列は銭湯の「ロッカー」に例えられます。
+銭湯のロッカーには番号が割り振られています。
+荷物の出し入れをする場合はその番号を確認してから使用します。
+
+配列も同じように値を入れることのできる場所が複数存在しており、
+その一つ一つを「要素」と呼ぶ。また、その要素に割り当てられた番号を「要素番号」と呼びます。
+要素番号は「0」から始まることに注意をしましょう。
+
+以下は、配列を使ったフローチャートです。「```配列の初期化処理```」は配列に値を入れる処理です。
+この処理でフォローチャートの右側にある配列を作成しています。
+
+![例題1](./structure-combination-001.svg)
+
+<Question question = "実行結果" opened="true">
+    <Answer
+        answer =
+            "15
+            24
+            7
+            10"
+    />
+</Question>
 
 ## 例題2
 
-    ![例題2](./iteration-example-002.svg)
+次のフローチャートでは分岐構造と反復構造を組み合わせています。
+反復構造を使って 1 から 20 の数値を生成し、その数値が 3 で割り切れる場合は「```〇〇は3で割り切れる```」の形式で出力しています。
 
-    <Question question = "実行結果" opened="true">
-        <Answer
-            answer =
-                "0
-                1
-                2"
-        />
-    </Question>
+![例題2](./structure-combination-002.svg)
+
+<Question question = "実行結果" opened="true">
+    <Answer
+        answer =
+            "3は3で割り切れる
+            6は3で割り切れる
+            9は3で割り切れる
+            12は3で割り切れる
+            15は3で割り切れる
+            18は3で割り切れる"
+    />
+</Question>
 
 ## 例題3
 
-    ![例題3](./iteration-example-003.svg)
+![例題3](./structure-combination-003.svg)
 
-    <Question question = "実行結果" opened="true">
-        <Answer
-            answer =
-                "3
-                4
-                5
-                6"
-        />
-    </Question>
+<Question question = "変数 start = 5, end = 8 の場合の実行結果" opened="true">
+    <Answer
+        answer =
+            "5
+            6
+            7
+            8"
+    />
+</Question>
 
-## 例題4
+<Question question = "変数 start = 12, end = 8 の場合の実行結果" opened="true">
+    <Answer
+        answer =
+            "8
+            9
+            10
+            11
+            12"
+    />
+</Question>
 
-    ![例題4](./iteration-example-004.svg)
-
-    <Question question = "実行結果" opened="true">
-        <Answer
-            answer =
-                "4
-                3
-                2
-                1"
-        />
-    </Question>
-
-## 例題5
-    ![例題5](./iteration-example-005.svg)
-
-    <Question question = "実行結果" opened="true">
-        <Answer
-            answer =
-                "6
-                5
-                4
-                3
-                2
-                1
-                0"
-        />
-    </Question>

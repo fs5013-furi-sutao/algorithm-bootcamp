@@ -13,146 +13,146 @@ import { Question, Answer } from 'smooth-doc/components'
 
 ## 例題1
 
-    以下は分岐構造を使ったフローチャートの例です。「判断」記号の中には条件を記述します。
-    記述した条件に当てはまる場合は Yes の経路を、当てはまらない場合は No の経路を通ります。
+以下は分岐構造を使ったフローチャートの例です。「判断」記号の中には条件を記述します。
+記述した条件に当てはまる場合は Yes の経路を、当てはまらない場合は No の経路を通ります。
 
-    ![例題1](./selection-example-001.svg)
+![例題1](./selection-example-001.svg)
 
-    例えば、number の値として 12 を入力した場合、```12 >= 10``` のように 12 が 10 以上かどうかを判定します。
-    この場合、条件に当てはまりますので、Yes の経路を通ります。
+例えば、number の値として 12 を入力した場合、```12 >= 10``` のように 12 が 10 以上かどうかを判定します。
+この場合、条件に当てはまりますので、Yes の経路を通ります。
 
-    結果として「```"10以上"を表示```」の処理が実行され、```10以上```が出力されます。
+結果として「```"10以上"を表示```」の処理が実行され、```10以上```が出力されます。
 
-    <Question question = "変数 number = 12 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-001_2.svg"
-            answer = "10以上"
-        />
-    </Question>
+<Question question = "変数 number = 12 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-001_2.svg"
+        answer = "10以上"
+    />
+</Question>
 
-    次に number の値として 8 を入力した場合、```8 >= 10``` のように 8 が 10 以上かどうかを判定します。
-    この場合、条件に当てはまらないので、No の経路を通ります。
+次に number の値として 8 を入力した場合、```8 >= 10``` のように 8 が 10 以上かどうかを判定します。
+この場合、条件に当てはまらないので、No の経路を通ります。
 
-    No の経路には何も処理が記述されていないため、何も出力されません。
+No の経路には何も処理が記述されていないため、何も出力されません。
 
-    <Question question = "変数 number = 8 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-001_1.svg"
-            answer = " "
-        />
-    </Question>
+<Question question = "変数 number = 8 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-001_1.svg"
+        answer = " "
+    />
+</Question>
 
-    <Question question = "変数 number = 10 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-001_2.svg"
-            answer = "10以上"
-        />
-    </Question>
+<Question question = "変数 number = 10 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-001_2.svg"
+        answer = "10以上"
+    />
+</Question>
 
 ## 例題2
 
-    ![例題2](./selection-example-002.svg)
+![例題2](./selection-example-002.svg)
 
-    <Question question = "変数 number = 8 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-002_1.svg"
-            answer = "10以下"
-        />
-    </Question>
+<Question question = "変数 number = 8 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-002_1.svg"
+        answer = "10以下"
+    />
+</Question>
 
-    <Question question = "変数 number = 10 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-002_1.svg"
-            answer = "10以下"
-        />
-    </Question>
+<Question question = "変数 number = 10 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-002_1.svg"
+        answer = "10以下"
+    />
+</Question>
 
-    <Question question = "変数 number = 12 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-002_2.svg"
-            answer = ""
-        />
-    </Question>
+<Question question = "変数 number = 12 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-002_2.svg"
+        answer = ""
+    />
+</Question>
 
 ## 例題3
 
-    ![例題3](./selection-example-003.svg)
+![例題3](./selection-example-003.svg)
 
-    <Question question = "変数 stock = 10 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-003_1.svg"
-            answer = "在庫あり"
-        />
-    </Question>
+<Question question = "変数 stock = 10 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-003_1.svg"
+        answer = "在庫あり"
+    />
+</Question>
 
-    <Question question = "変数 stock = 0 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-003_2.svg"
-            answer = ""
-        />
-    </Question>
+<Question question = "変数 stock = 0 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-003_2.svg"
+        answer = ""
+    />
+</Question>
 
-    <Question question = "変数 stock = -5 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-003_2.svg"
-            answer = "在庫なし"
-        />
-    </Question>
+<Question question = "変数 stock = -5 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-003_2.svg"
+        answer = "在庫なし"
+    />
+</Question>
 
 ## 例題4
 
-    ![例題4](./selection-example-004.svg)
+![例題4](./selection-example-004.svg)
 
-    <Question question = "変数 number = 8 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-004_1.svg"
-            answer = "16"
-        />
-    </Question>
+<Question question = "変数 number = 8 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-004_1.svg"
+        answer = "16"
+    />
+</Question>
 
-    <Question question = "変数 number = 9 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-004_2.svg"
-            answer = "27"
-        />
-    </Question>
+<Question question = "変数 number = 9 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-004_2.svg"
+        answer = "27"
+    />
+</Question>
 
-    <Question question = "変数 number = 13 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-004_2.svg"
-            answer = "39"
-        />
-    </Question>
+<Question question = "変数 number = 13 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-004_2.svg"
+        answer = "39"
+    />
+</Question>
 
 ## 例題5
-    ![例題5](./selection-example-005.svg)
+![例題5](./selection-example-005.svg)
 
-    <Question question = "変数 number = 12 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-005_1.svg"
-            answer = 
-                "2で割り切れる
-                3で割り切れる"
-        />
-    </Question>
+<Question question = "変数 number = 12 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-005_1.svg"
+        answer = 
+            "2で割り切れる
+            3で割り切れる"
+    />
+</Question>
 
-    <Question question = "変数 number = 14 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-005_2.svg"
-            answer = "2で割り切れる"
-        />
-    </Question>
+<Question question = "変数 number = 14 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-005_2.svg"
+        answer = "2で割り切れる"
+    />
+</Question>
 
-    <Question question = "変数 number = 21 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-005_3.svg"
-            answer = "3で割り切れる"
-        />
-    </Question>
+<Question question = "変数 number = 21 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-005_3.svg"
+        answer = "3で割り切れる"
+    />
+</Question>
 
-    <Question question = "変数 number = 11 の場合の実行結果" opened="true">
-        <Answer
-            imgSrc = "./selection-example-005_4.svg"
-            answer = ""
-        />
-    </Question>
+<Question question = "変数 number = 11 の場合の実行結果" opened="true">
+    <Answer
+        imgSrc = "./selection-example-005_4.svg"
+        answer = ""
+    />
+</Question>
