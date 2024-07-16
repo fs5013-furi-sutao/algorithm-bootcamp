@@ -5,13 +5,7 @@ export const Answer = (props) => {
     if(props.imgSrc == null){
         return (
             <>
-                <div style={{ width:'100%' ,
-                        backgroundColor:'#666',
-                        marginTop:'10px',
-                        color:'white',
-                        padding:'5px',
-                        textAlign:'center',
-                        borderRadius:'5px 5px 0 0'}}>
+                <div className="answerHeader" >
                     実行結果
                 </div>
 
@@ -21,24 +15,12 @@ export const Answer = (props) => {
     } else {
         return(
             <>
-                <div style={{ width:'100%' ,
-                        backgroundColor:'beige',
-                        color:'white',
-                        padding:'15px 0',
-                        borderRadius:'0 0 5px 5px',
-                        display:'flex',
-                        justifyContent:'center'}}>
+                <div className="flowchartImg">
                     <img src = {props.imgSrc} style={{}} />
                 </div>
 
-                <div style={{ width:'100%' ,
-                        backgroundColor:'#666',
-                        marginTop:'10px',
-                        color:'white',
-                        padding:'5px',
-                        textAlign:'center',
-                        borderRadius:'5px 5px 0 0'}}>
-                    Answer
+                <div className="answerHeader" >
+                    実行結果
                 </div>
 
                 <Code>{ props.answer }</Code>

@@ -136,7 +136,7 @@ export const theme = {
     'primary-a500': (p) => transparentize(0.5, th.color('primary-500')(p)),
 
     background: th.color('white'),
-    'background-light': th.color('gray-100'),
+    'background-light': th.color('yellow-200'),
     'background-primary': th.color('primary-100'),
     'background-mark': th.color('yellow-200'),
     'background-light-a50': (p) =>
@@ -175,6 +175,8 @@ export const theme = {
     'table-data-font-color': th.color('gray-700'),
 
     'img-background-color': th.color('white'),
+    'answer-background-color': th.color('blue-gray-100'),
+    'question-header-color': th.color('blue-600'),
 
     'details-background-color': th.color('yellow-100'),
 
@@ -217,7 +219,9 @@ export const theme = {
         'table-data-background-color': th.color('white'),
         'table-data-font-color': th.color('gray-700'),
 
-        'img-background-color': th.color('white'),
+        'img-background-color': th.color('blue-gray-100'),
+        'answer-background-color': th.color('blue-gray-100'),
+        'question-header-color': th.color('true-gray-700'),
 
         'details-background-color': th.color('yellow-100'),
       },

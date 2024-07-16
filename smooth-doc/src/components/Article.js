@@ -150,14 +150,15 @@ export const Article = styled.article`
 
   img {
     max-width: 100%;
-    background-color:img-background-color;
-    border:5px white solid;
+    background-color: img-background-color;
+    border: 5px solid;
+    border-color: img-background-color;
   }
 
   details {
-    background-color: #FFF6E9;
+    background-color: answer-background-color;
     //border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #999;
     padding: 0.5em 0.5em 0;
     margin-top:0.5em;
   }
@@ -168,14 +169,16 @@ export const Article = styled.article`
     margin: -0.5em -0.5em 0;
     padding: 0.5em;
     display: block;
-    background-color:#40A2E3;
-    font:#fff;
+    background-color: question-header-color;
+    color:#fff;
+    font-weight:400;
     cursor:pointer;
   }
 
   details img {
-    background-color:khaki;
-    border:solid 5px khaki;
+    background-color: answer-background-color;
+    border:solid 5px;
+    border-color: answer-background-color;
   }
 
   details summary::before {
@@ -201,6 +204,51 @@ export const Article = styled.article`
   details pre{
     margin-top:0em;
     border-radius:0 0 5px 5px;
+  }
+
+  p.goal {
+    position: relative;
+    color: #333;
+    font-weight:400;
+    background: #fdf7e5;
+    line-height: 1.4;
+    padding: 1em 1em;
+    margin: 3em 0 2em !important;
+    border-radius: 0 5px 5px 5px;
+  }
+
+  p.goal:after {
+    /*タブ*/
+    position: absolute;
+    content: 'この項目のゴール';
+    background: #9966cc;
+    color: #fff;
+    left: 0px;
+    bottom: 100%;
+    border-radius: 5px 5px 0 0;
+    padding: 7px 10px;
+    /*font-size: 0.7em;*/
+    font-size: 16;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+  
+  div.answerHeader {
+    width:100%;
+    background-color:#666;
+    margin-top:10px;
+    color:white;
+    padding:5px;
+    text-align:center;
+    border-radius:5px 5px 0 0;
+  }
+
+  div.flowchartImg {
+    width:100%;
+    color:white;
+    padding:15px 0;
+    display:flex;
+    justify-content:center;
   }
 
   ol,
