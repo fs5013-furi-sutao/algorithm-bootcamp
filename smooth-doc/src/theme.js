@@ -176,9 +176,9 @@ export const theme = {
 
     'img-background-color': th.color('white'),
     'answer-background-color': th.color('blue-gray-100'),
-    'question-header-color': th.color('blue-600'),
+    'question-header-color': '#0468BF',
 
-    'details-background-color': th.color('yellow-100'),
+    'details-border-color': th.color('gray-400'),
 
     modes: {
       dark: {
@@ -223,7 +223,7 @@ export const theme = {
         'answer-background-color': th.color('blue-gray-100'),
         'question-header-color': th.color('true-gray-700'),
 
-        'details-background-color': th.color('yellow-100'),
+        'details-border-color': th.color('gray-400'),
       },
     },
   },

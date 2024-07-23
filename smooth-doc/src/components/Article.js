@@ -157,20 +157,19 @@ export const Article = styled.article`
 
   details {
     background-color: answer-background-color;
-    //border-radius: 10px;
-    border: 1px solid #999;
+    border: 1px solid;
+    border-color: details-border-color;
     padding: 0.5em 0.5em 0;
     margin-top:0.5em;
   }
 
   details summary {
-    font-size: 18;
     padding: 0.5em;
     margin: -0.5em -0.5em 0;
     padding: 0.5em;
     display: block;
     background-color: question-header-color;
-    color:#fff;
+    color:#eee;
     font-weight:400;
     cursor:pointer;
   }
@@ -188,16 +187,11 @@ export const Article = styled.article`
     margin-left: 0.1em;
   }
 
-  details summary[open]::after {
-    content: '\f068';
-  }
-
   details[open] {
     padding: 0.5em;
   }
 
   details[open] summary {
-    border-bottom: 1px solid #999;
     margin-bottom: 0.5em;
   }
 
